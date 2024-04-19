@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Pugazhendhi</h1>
 <h3 align="center">Passionate coder exploring various languages. Dedicated to learning, crafting solutions, and embracing growth.</h3>
 
+![github contribution grid snake animation](https://raw.githubusercontent.com/shahradelahi/shahradelahi/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pugazhendhidev&label=Profile%20views&color=00b3ff&style=flat" alt="pugazhendhidev" /> </p>
 
 - 🌱 I’m currently learning **Reactjs**
