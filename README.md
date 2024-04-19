@@ -14,7 +14,7 @@
 
  [![Top languages](https://github-readme-mwendwa.vercel.app/api/top-langs/?username=pugazhendhidev&layout=compact&count_private=true&theme=blue-green&title_color=00b3ff)](#)
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pugazhendhidev&show_icons=true&locale=en&layout=compact" alt="pugazhendhidev" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pugazhendhidev&show_icons=true&locale=en&layout=compact&theme=blue-green&title-color=00b3ff" alt="pugazhendhidev" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pugazhendhidev&show_icons=true&locale=en" alt="pugazhendhidev" /></p>
 
