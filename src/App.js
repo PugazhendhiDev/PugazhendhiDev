@@ -21,7 +21,7 @@ function App() {
       duration: 1,
       opacity: 0,
       delay: 2,
-      stagger: 0.3,
+      stagger: 0.2,
     });
     gsap.from(".footerAnimation", {
       duration: 1,
