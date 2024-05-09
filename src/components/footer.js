@@ -39,7 +39,7 @@ function Footer() {
         </div>
         <div className="my-2 p-2 bg-white border-2 border-purple-500 rounded-xl">
           <p className="footerAnimation text-center">
-            &copy; 2024 D. Pugazhendhi. All rights reserved.
+            &copy; 2024 Pugazhendhi. All rights reserved.
           </p>
         </div>
       </footer>
