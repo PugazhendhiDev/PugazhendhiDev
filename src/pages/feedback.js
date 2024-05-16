@@ -34,6 +34,7 @@ function Feedback() {
       </div>
       <div className="bg-[#111] mx-auto my-4 p-5 text-center rounded-2xl">
         <form className="mx-auto flex flex-col max-w-[500px]" onSubmit={onSubmit}>
+          <input type="hidden" name="Pugazhendhi's portfolio (FEEDBACK)"/>
           <label className="contentRevealAnimation text-left mb-1 text-purple-500">Name:</label>
           <input
             className="contentRevealAnimation p-1 mb-4 bg-[#222] text-white border-2 border-purple-500 rounded-md"
@@ -50,11 +51,12 @@ function Feedback() {
           />
           <label className="contentRevealAnimation text-left mb-1 text-purple-500">Feedback:</label>
           <textarea
-            className="contentRevealAnimation p-1 mb-4 bg-[#222] text-white border-2 border-purple-500 rounded-md"
+            className="contentRevealAnimation p-1 mb-4 bg-[#222] h-[100px] text-white border-2 border-purple-500 rounded-md"
             type="text"
             name="Feedback"
             placeholder="Enter your Feedback"
           />
+          <button className="contentRevealAnimation p-1 mt-2 mb-4 text-center mx-auto md:mr-auto md:ml-0 w-[100px] bg-[#222] text-white hover:text-purple-500 border-2 border-purple-500 rounded-md" type="submit">Submit</button>
         </form>
       </div>
     </>
