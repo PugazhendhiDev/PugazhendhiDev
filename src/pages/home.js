@@ -1,3 +1,4 @@
+import React from "react";
 import MyImg from "../assets/MyImg/Pugazhendhi.png";
 import Aboutpage from "./about";
 import Portfolio from "./portfolio";

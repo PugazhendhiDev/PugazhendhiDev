@@ -1,3 +1,4 @@
+import React from "react";
 import MyImg from "../assets/MyImg/Pugazhendhi.png";
 import "./styles/about.css";
 
