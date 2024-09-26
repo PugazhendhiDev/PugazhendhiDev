@@ -62,7 +62,7 @@ function Contact() {
           </div>
           <div className="bg-[#222] justify-center mb-1 mx-1 p-2 md:p-4 font-semibold text-center border-2 border-purple-500 rounded-xl md:rounded-2xl">
             <a
-              href="https://instagram.com/pugazhendhi_dev/"
+              href="https://instagram.com/pugazhendhi_explorer/"
               className="contentRevealAnimation flex gap-2 max-w-[260px] mx-auto"
             >
               <div className="blurBorder my-auto w-6 h-6 md:w-10 md:h-10 bg-purple-500 text-white p-1 rounded">
@@ -81,7 +81,7 @@ function Contact() {
                 </svg>
               </div>
               <h1 className="text-sm md:text-md text-white hover:text-purple-500 my-auto">
-                instagram.com/pugazhendhi_dev
+                instagram.com/pugazhendhi_explorer
               </h1>
             </a>
           </div>
