@@ -81,7 +81,7 @@ function Contact() {
                 </svg>
               </div>
               <h1 className="text-sm md:text-md text-white hover:text-purple-500 my-auto">
-                insta: pugazhendhi_explorer
+                instagram: pugazhendhi_explorer
               </h1>
             </a>
           </div>
