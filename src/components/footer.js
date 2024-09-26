@@ -30,11 +30,11 @@ function Footer() {
           </div>
           <div className="bg-[#fff] justify-center my-1 mx-1 p-2 font-semibold text-center border-2 border-purple-500 rounded-xl">
             <a
-              href="https://instagram.com/pugazhendhi_dev/"
+              href="https://instagram.com/pugazhendhi_explorer/"
               className="footerAnimation max-w-[260px] mx-auto"
             >
               <h1 className="text-sm md:text-md text-black hover:text-purple-500 my-auto">
-                instagram.com/pugazhendhi_dev
+                instagram: pugazhendhi_explorer
               </h1>
             </a>
           </div>
