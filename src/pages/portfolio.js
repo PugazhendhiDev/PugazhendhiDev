@@ -24,10 +24,13 @@ function Portfolio() {
         </h1>
         <ul className="list-disc ml-10 mb-4">
           <li className="contentRevealAnimation">
-            Programming Languages: HTML, CSS, JavaScript, Python, C++, C#.
+            Programming Languages: JavaScript, Python, C++, C#
           </li>
           <li className="contentRevealAnimation">
-            Frameworks: React.js, Python Flask, Tailwind CSS.
+            Libraries: React.js.
+          </li>
+          <li className="contentRevealAnimation">
+            Frameworks: Python Flask, Tailwind CSS (CSS FRAMEWORK).
           </li>
         </ul>
         <h1 className="contentRevealAnimation blurText my-2 font-bold text-purple-500 text-[18px] lg:text-3xl uppercase pl-4 border-l-2 border-purple-500 lg:pr-5 lg:mr-5">
@@ -36,8 +39,7 @@ function Portfolio() {
         <ul className="list-disc ml-10 mb-4">
           <li className="contentRevealAnimation">
             Web Developer: Proficient in building dynamic and responsive
-            websites using HTML, CSS, JavaScript, and various frameworks like
-            React.js and Tailwind CSS.
+            websites using HTML, CSS, JavaScript, nodejs, and using library like React.js and Tailwind CSS (CSS FRAMEWORK).
           </li>
           <li className="contentRevealAnimation">
             Game Developer: Experienced in game development in Unity.
