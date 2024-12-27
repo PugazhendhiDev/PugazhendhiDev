@@ -8,17 +8,7 @@ function Portfolio() {
           --- PORTFOLIO ---
         </h1>
       </div>
-      <div className="bg-[#111] mx-auto my-4 p-5 text-white text-left rounded-2xl">
-        <h1 className="contentRevealAnimation blurText my-2 font-bold text-purple-500 text-[18px] lg:text-3xl uppercase pl-4 border-l-2 border-purple-500 lg:pr-5 lg:mr-5">
-          Bio Data:
-        </h1>
-        <ul className="list-disc ml-10 mb-4">
-          <li className="contentRevealAnimation">Name: D. Pugazhendhi</li>
-          <li className="contentRevealAnimation">Age: 17</li>
-          <li className="contentRevealAnimation">
-            Qualification: 12th Standard
-          </li>
-        </ul>
+      <div className="bg-[#111] mx-auto my-4 p-5 text-white text-left rounded-2xl">
         <h1 className="contentRevealAnimation blurText my-2 font-bold text-purple-500 text-[18px] lg:text-3xl uppercase pl-4 border-l-2 border-purple-500 lg:pr-5 lg:mr-5">
           Skills:
         </h1>
@@ -30,7 +20,7 @@ function Portfolio() {
             Libraries: React.js.
           </li>
           <li className="contentRevealAnimation">
-            Frameworks: Python Flask, Tailwind CSS (CSS FRAMEWORK).
+            Frameworks: Tailwind CSS (CSS FRAMEWORK).
           </li>
         </ul>
         <h1 className="contentRevealAnimation blurText my-2 font-bold text-purple-500 text-[18px] lg:text-3xl uppercase pl-4 border-l-2 border-purple-500 lg:pr-5 lg:mr-5">
