@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className="bg-purple-300 p-5 mb-4 rounded-2xl border-2 border-purple-500 bg-opacity-95 blurBorder">
         <h1 className="footerAnimation my-2 font-bold text-[22px] lg:text-3xl uppercase pl-2 border-l-2 border-purple-500 lg:pr-5 lg:mr-5">
-          Contact Us
+          Contact
         </h1>
         <div className="my-2 mb-6 justify-center flex flex-col md:flex-row">
           <div className="bg-[#fff] justify-center my-1 mx-1 p-2 font-semibold text-center border-2 border-purple-500 rounded-xl">
