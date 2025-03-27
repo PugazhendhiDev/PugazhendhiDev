@@ -16,4 +16,3 @@
 
  [![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=pugazhendhidev&layout=compact&count_private=true&theme=blue-green&title_color=00b3ff)](#)
 
-[![Pugazhendhi's current streak](https://github-readme-streak-stats.herokuapp.com/?user=pugazhendhidev&count_private=true&theme=blue-green&title_color=00b3ff)](#)
