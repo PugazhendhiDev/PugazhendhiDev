@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -18,6 +19,8 @@
     --bg-color: #ccc;
     --faded-text-color: #333;
     --text-color: #fafaf7;
+    --common-text-color: #fafaf7;
+    --common-bg-color: #222;
 
     --animate-float: float 3s ease-in-out infinite;
 
@@ -36,12 +39,22 @@
 
 @utility content-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4px;
+    padding: 1rem !important;
 }
 
 @utility gradient-text {
     background: linear-gradient(to bottom, var(--faded-text-color) 65%, #666 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@utility gradient-text-light {
+    background: linear-gradient(to bottom, var(--text-color) 65%, #222 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
