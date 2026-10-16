@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url("/fonts/impact.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --bg-color: #ccc;
+    --faded-text-color: #333;
+    --text-color: #fafaf7;
+
+    --animate-float: float 3s ease-in-out infinite;
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+@utility content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@utility gradient-text {
+    background: linear-gradient(to bottom, var(--faded-text-color) 65%, #666 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    font-family: "Impact", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
