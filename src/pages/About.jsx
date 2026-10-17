@@ -85,11 +85,11 @@ export default function About({ className = "", isVisible = false }) {
     <section
       ref={sectionRef}
       id="about"
-      className={`relative about-content content-center min-h-dvh w-full border-t-2 border-t-[var(--faded-text-color)]/30 bg-[var(--common-bg-color)] px-6 py-16 ${className}`}
+      className={`relative about-content content-center py-20! min-h-dvh w-full border-t-2 border-t-[var(--faded-text-color)]/30 bg-[var(--common-bg-color)] ${className}`}
     >
       <h1
         ref={headingRef}
-        className="max-w-4xl pt-20! text-center text-4xl leading-tight gradient-text-light sm:text-5xl md:text-7xl"
+        className="max-w-4xl text-center text-4xl leading-tight gradient-text-light sm:text-5xl md:text-7xl"
       >
         <span className="about-heading-line">
           {renderLetters("Curious by nature.", "line1")}

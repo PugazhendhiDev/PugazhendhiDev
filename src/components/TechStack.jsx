@@ -8,6 +8,10 @@ import {
   FaServer,
   FaLaptopCode,
   FaReact,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaNetworkWired,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -19,19 +23,24 @@ import {
   SiFirebase,
   SiVercel,
   SiRender,
+  SiMysql,
+  SiMongodb,
+  SiExpress,
+  SiSpringboot,
 } from "react-icons/si";
-import defaultStack from "./techStack.json";
+import defaultStack from "../Data/techStack.json";
 
 const ICONS = {
   FaPython, FaNodeJs, FaGithub, FaAws, FaRobot, FaLayerGroup, FaServer,
-  FaLaptopCode, FaReact, SiJavascript, SiFastapi, SiTailwindcss, SiPostman,
-  SiUnity, SiGit, SiFirebase, SiVercel, SiRender,
+  FaLaptopCode, FaReact, FaJava, FaHtml5, FaCss3Alt, FaNetworkWired,
+  SiJavascript, SiFastapi, SiTailwindcss, SiPostman, SiUnity, SiGit,
+  SiFirebase, SiVercel, SiRender, SiMysql, SiMongodb, SiExpress, SiSpringboot,
 };
 
 export default function TechStack({ sections = defaultStack, className = "" }) {
   return (
     <div className={`flex flex-col gap-8 ${className}`}>
-      {sections.map(({ category, items }) => (
+      {sections.map(({ category, items = [] }) => (
         <div key={category} className="tech-section flex flex-col gap-4">
           <h2 className="tech-heading text-2xl gradient-text-light">{category}</h2>
           <ul className="flex flex-wrap gap-3">

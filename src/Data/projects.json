@@ -1,0 +1,45 @@
+[
+  {
+    "id": "resqnet",
+    "title": "ResQNet: Accident Detection & Alert System",
+    "description": "A mobile accident detection and alert system that uses smartphone sensors and sound analysis to identify crashes proactively. It sends automated SMS emergency alerts, validates against false alarms, and notifies people nearby about accident zones in real time.",
+    "image": "resqnet.png",
+    "tech": [
+      "Accelerometer",
+      "Gyroscope",
+      "GPS",
+      "Sound Analysis",
+      "SMS Alerts"
+    ],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "id": "lifebite",
+    "title": "Lifebite: AI-Enabled Food Donation Platform",
+    "description": "A platform connecting commercial food donors with NGOs to reduce food wastage. Features real-time donation tracking, role-based dashboards, and computer-vision AI checks that validate food safety and freshness from images.",
+    "image": "lifebite.png",
+    "tech": [
+      "ReactJS",
+      "Node.js",
+      "Firebase",
+      "Computer Vision"
+    ],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "id": "vayal-ai",
+    "title": "Vayal-AI: AI-Powered Smart Farming Platform",
+    "description": "An AI-powered farming platform offering automated crop disease detection, real-time farm insights and smart alerts. It also includes a digital marketplace that connects farmers directly with commercial buyers to improve yields and profits.",
+    "image": "vayalai.png",
+    "tech": [
+      "ReactJS",
+      "Node.js",
+      "MongoDB",
+      "AI Integration"
+    ],
+    "repo": "",
+    "live": ""
+  }
+]

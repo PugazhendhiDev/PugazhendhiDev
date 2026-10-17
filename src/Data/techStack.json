@@ -1,0 +1,183 @@
+[
+  {
+    "category": "Focus Areas",
+    "items": [
+      {
+        "name": "Full Stack Developer",
+        "icon": "FaLayerGroup",
+        "bg": "#0EA5E9",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Frontend Developer",
+        "icon": "FaLaptopCode",
+        "bg": "#EC4899",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Backend Developer",
+        "icon": "FaServer",
+        "bg": "#475569",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "AI Integration",
+        "icon": "FaRobot",
+        "bg": "#8B5CF6",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "category": "Languages",
+    "items": [
+      {
+        "name": "Java",
+        "icon": "FaJava",
+        "bg": "#ED8B00",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "SiJavascript",
+        "bg": "#F7DF1E",
+        "color": "#000000"
+      },
+      {
+        "name": "Python",
+        "icon": "FaPython",
+        "bg": "#3776AB",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "HTML5",
+        "icon": "FaHtml5",
+        "bg": "#E34F26",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "CSS3",
+        "icon": "FaCss3Alt",
+        "bg": "#1572B6",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "items": [
+      {
+        "name": "MySQL",
+        "icon": "SiMysql",
+        "bg": "#4479A1",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "SiMongodb",
+        "bg": "#47A248",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "category": "Frameworks & APIs",
+    "items": [
+      {
+        "name": "ReactJS",
+        "icon": "FaReact",
+        "bg": "#20232A",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "TailwindCSS",
+        "icon": "SiTailwindcss",
+        "bg": "#06B6D4",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Node.js",
+        "icon": "FaNodeJs",
+        "bg": "#5FA04E",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Express.js",
+        "icon": "SiExpress",
+        "bg": "#404040",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Java with SpringBoot",
+        "icon": "SiSpringboot",
+        "bg": "#6DB33F",
+        "color": "#000000"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "SiFastapi",
+        "bg": "#009688",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "REST API",
+        "icon": "FaNetworkWired",
+        "bg": "#0F766E",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "category": "Tools & Platforms",
+    "items": [
+      {
+        "name": "Git",
+        "icon": "SiGit",
+        "bg": "#F05032",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "GitHub",
+        "icon": "FaGithub",
+        "bg": "#181717",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Postman",
+        "icon": "SiPostman",
+        "bg": "#FF6C37",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "AWS",
+        "icon": "FaAws",
+        "bg": "#FF9900",
+        "color": "#000000"
+      },
+      {
+        "name": "Firebase",
+        "icon": "SiFirebase",
+        "bg": "#FFCA28",
+        "color": "#000000"
+      },
+      {
+        "name": "Vercel",
+        "icon": "SiVercel",
+        "bg": "#000000",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Render",
+        "icon": "SiRender",
+        "bg": "#46E3B7",
+        "color": "#000000"
+      },
+      {
+        "name": "Unity",
+        "icon": "SiUnity",
+        "bg": "#222222",
+        "color": "#FFFFFF"
+      }
+    ]
+  }
+]
