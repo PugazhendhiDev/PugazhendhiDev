@@ -15,6 +15,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --bg-color: #ccc;
     --faded-text-color: #333;
@@ -61,8 +69,18 @@
 }
 
 body {
-    font-family: "Impact", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.impact-font {
+    font-family: "Impact", sans-serif;
 }

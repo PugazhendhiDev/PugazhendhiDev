@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,6 +12,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function App() {
   const container = useRef(null);
+  const [aboutVisible, setAboutVisible] = useState(false);
+  const aboutStarted = useRef(false);
 
   useGSAP(
     () => {
@@ -19,7 +21,7 @@ export default function App() {
         scrollTrigger: {
           trigger: ".reveal-stage",
           start: "top top",
-          end: "+=150%",
+          end: () => `+=${window.innerHeight * 1.5}`,
           scrub: 1,
           pin: true,
           anticipatePin: 1,
@@ -58,6 +60,13 @@ export default function App() {
         { opacity: 0, duration: 0.1 },
         "split+=0.3"
       );
+
+      timeline.eventCallback("onUpdate", () => {
+        if (!aboutStarted.current && timeline.progress() >= 0.85) {
+          aboutStarted.current = true;
+          setAboutVisible(true);
+        }
+      });
     },
     { scope: container }
   );
@@ -66,25 +75,25 @@ export default function App() {
     <div ref={container}>
       <Navbar />
 
-      <section className="reveal-stage relative h-dvh w-full">
-        <div className="sticky top-0 h-dvh w-full overflow-hidden">
-          <div className="absolute inset-0 z-10 h-full w-full overflow-y-auto bg-[var(--common-bg-color)]">
-            <About />
+      <section className="reveal-stage relative min-h-dvh w-full">
+        <div className="relative min-h-dvh w-full overflow-hidden">
+          <div className="relative z-10 w-full bg-[var(--common-bg-color)]">
+            <About isVisible={aboutVisible} />
           </div>
 
-          <div className="home-left pointer-events-none absolute inset-y-0 left-0 z-20 h-full w-1/2 overflow-hidden">
+          <div className="home-left pointer-events-none absolute left-0 top-0 z-20 h-dvh w-1/2 overflow-hidden">
             <div className="absolute inset-y-0 left-0 h-full w-[200%]">
               <Home />
             </div>
           </div>
 
-          <div className="home-right pointer-events-none absolute inset-y-0 right-0 z-20 h-full w-1/2 overflow-hidden">
+          <div className="home-right pointer-events-none absolute right-0 top-0 z-20 h-dvh w-1/2 overflow-hidden">
             <div className="absolute inset-y-0 right-0 h-full w-[200%]">
               <Home />
             </div>
           </div>
 
-          <div className="reveal-line pointer-events-none absolute inset-y-0 left-1/2 z-30 w-px -translate-x-1/2 origin-center bg-[var(--text-color)] shadow-[0_0_12px_var(--text-color)]" />
+          <div className="reveal-line pointer-events-none absolute left-1/2 top-0 z-30 h-dvh w-px -translate-x-1/2 origin-center bg-[var(--text-color)] shadow-[0_0_12px_var(--text-color)]" />
         </div>
       </section>
 
