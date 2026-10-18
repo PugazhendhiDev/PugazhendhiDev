@@ -32,7 +32,7 @@ npm run dev
 
 ## License
 
-The source code in this repository is licensed under the [MIT License](LICENSE).
+The source code in this repository is licensed under the [MIT License](LICENSE.txt).
 
 The following personal content is **not** covered by the MIT License and is
 © 2026 Pugazhendhi Dhamodharan, all rights reserved. Please do not reuse it
