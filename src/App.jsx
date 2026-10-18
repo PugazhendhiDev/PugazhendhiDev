@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Achievements from "./pages/Achievements";
+import Contact from "./pages/Contact";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -98,7 +100,9 @@ export default function App() {
       </section>
 
       <main className="relative">
-        <Projects className="sticky top-0 z-20" />
+        <Achievements />
+        <Projects />
+        <Contact />
       </main>
     </div>
   );

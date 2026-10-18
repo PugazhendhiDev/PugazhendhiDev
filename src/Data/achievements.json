@@ -1,0 +1,38 @@
+[
+  {
+    "id": "idea-spark",
+    "title": "Idea Spark Award",
+    "tag": "INNOCLASH 2026",
+    "content": "Awarded the prestigious Idea Spark Award at INNOCLASH 2026 for outstanding core innovation in the accident detection logic of ResQNet.",
+    "image": "https://placehold.co/800x450/333/fafaf7?text=Idea+Spark+Award",
+    "certificate": "",
+    "repo": ""
+  },
+  {
+    "id": "apple-x-fest",
+    "title": "2nd Place at Apple-X-Fest",
+    "tag": "Apple-X-Fest",
+    "content": "Secured 2nd place for the technical development of ResQNet, a road safety system that detects accidents and alerts emergency contacts.",
+    "image": "https://placehold.co/800x450/333/fafaf7?text=Apple-X-Fest",
+    "certificate": "",
+    "repo": ""
+  },
+  {
+    "id": "lifebite-runner-up",
+    "title": "Inter-college Runner-up",
+    "tag": "Inter-college",
+    "content": "Earned runner-up honors for Lifebite, an AI-enabled food donation platform that connects donors with NGOs to reduce food wastage.",
+    "image": "https://placehold.co/800x450/333/fafaf7?text=Runner-up",
+    "certificate": "",
+    "repo": ""
+  },
+  {
+    "id": "google-sih",
+    "title": "Google Solution Challenge & SIH",
+    "tag": "2025",
+    "content": "Submitted Vayal-AI to the Google Solution Challenge 2025 and was selected in the Smart India Hackathon (SIH) Internals.",
+    "image": "https://placehold.co/800x450/333/fafaf7?text=Google+Solution+Challenge",
+    "certificate": "",
+    "repo": ""
+  }
+]

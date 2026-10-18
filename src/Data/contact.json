@@ -1,0 +1,26 @@
+{
+  "heading": "Let's build something together.",
+  "subheading": "Have an opportunity, a project idea, or just want to say hello? My inbox is always open.",
+  "status": "Open to internships & junior software engineering roles",
+  "email": "pugazhendhi2137@gmail.com",
+  "links": [
+    {
+      "label": "LinkedIn",
+      "value": "pugazhendhi-dhamodharan",
+      "url": "https://www.linkedin.com/in/pugazhendhi-dhamodharan/",
+      "icon": "FaLinkedin"
+    },
+    {
+      "label": "GitHub",
+      "value": "PugazhendhiDev",
+      "url": "https://github.com/PugazhendhiDev",
+      "icon": "FaGithub"
+    },
+    {
+      "label": "Location",
+      "value": "Chennai, India",
+      "url": "",
+      "icon": "FaLocationDot"
+    }
+  ]
+}
