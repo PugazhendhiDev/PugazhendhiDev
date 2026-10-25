@@ -30,14 +30,14 @@ const loadImage = (src) =>
     img.src = src;
   });
 
-const loadFont = (font) => document.fonts.load(font).catch(() => { });
+const loadFont = (font) => document.fonts.load(font).catch(() => {});
 
 const pageLoaded = () =>
   document.readyState === "complete"
     ? Promise.resolve()
     : new Promise((resolve) =>
-      window.addEventListener("load", resolve, { once: true })
-    );
+        window.addEventListener("load", resolve, { once: true })
+      );
 
 function Pattern() {
   return (
@@ -69,13 +69,14 @@ function Pattern() {
   );
 }
 
-export default function Loader({ onDone }) {
+export default function Loader({ onDone, onReady }) {
   const rootRef = useRef(null);
   const contentRef = useRef(null);
   const numberRef = useRef(null);
   const barRef = useRef(null);
   const fillRef = useRef(null);
   const shimmerRef = useRef(null);
+  const watermarkRef = useRef(null);
 
   useEffect(() => {
     const previous = document.body.style.overflow;
@@ -90,6 +91,7 @@ export default function Loader({ onDone }) {
       const tasks = [
         ...assetUrls.map(loadImage),
         ...FONTS.map(loadFont),
+        document.fonts.ready.catch(() => {}),
         pageLoaded(),
       ];
       const total = tasks.length;
@@ -125,6 +127,7 @@ export default function Loader({ onDone }) {
             yPercent: -100,
             duration: 0.9,
             ease: "power4.inOut",
+            onStart: () => onReady?.(),
           });
       };
 
@@ -139,6 +142,17 @@ export default function Loader({ onDone }) {
         });
 
       render();
+
+      Promise.race([
+        loadFont(FONTS[0]),
+        new Promise((resolve) => setTimeout(resolve, 1500)),
+      ]).then(() => {
+        if (cancelled) return;
+        gsap.to([watermarkRef.current, contentRef.current], {
+          autoAlpha: 1,
+          duration: 0.5,
+        });
+      });
 
       gsap.to(sweep, {
         p: 0,
@@ -177,8 +191,10 @@ export default function Loader({ onDone }) {
       className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-[var(--common-bg-color)]"
     >
       <div
+        ref={watermarkRef}
         className="pointer-events-none absolute inset-0 overflow-hidden"
         aria-hidden="true"
+        style={{ opacity: 0, visibility: "hidden" }}
       >
         <div className="absolute inset-0 text-white/[0.06]">
           <Pattern />
@@ -204,6 +220,7 @@ export default function Loader({ onDone }) {
       <div
         ref={contentRef}
         className="relative z-10 flex w-full flex-col items-center gap-6 px-4"
+        style={{ opacity: 0, visibility: "hidden" }}
       >
         <div
           role="img"
