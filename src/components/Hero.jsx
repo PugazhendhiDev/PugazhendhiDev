@@ -9,9 +9,6 @@ gsap.registerPlugin(useGSAP);
 const GLOW_WARM = "from-amber-200 to-yellow-300";
 const GLOW_COOL = "from-teal-700 to-cyan-600";
 
-const GRAIN =
-  "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
-
 const MOTTLE =
   "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900'><filter id='m'><feTurbulence type='fractalNoise' baseFrequency='0.011' numOctaves='4' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23m)'/></svg>\")";
 
@@ -188,10 +185,6 @@ export default function Hero() {
       <div
         style={{ backgroundImage: MOTTLE }}
         className="pointer-events-none absolute inset-0 z-50 opacity-[0.45] mix-blend-soft-light"
-      />
-      <div
-        style={{ backgroundImage: GRAIN }}
-        className="pointer-events-none absolute inset-0 z-50 opacity-[0.24] mix-blend-multiply"
       />
       <div className="pointer-events-none absolute inset-0 z-50 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(40,30,18,0.4)_100%)]" />
     </div>

@@ -114,21 +114,42 @@ export default function Loader({ onDone, onReady }) {
       const exit = () => {
         if (exited || cancelled) return;
         exited = true;
-        gsap
-          .timeline({ onComplete: onDone })
-          .to(contentRef.current, {
+        sweepTween.kill();
+
+        const nextFrame = (fn) =>
+          requestAnimationFrame(() => requestAnimationFrame(fn));
+
+        const play = () => {
+          if (cancelled) return;
+          gsap.to(watermarkRef.current, {
             autoAlpha: 0,
-            y: -20,
             duration: 0.4,
-            delay: 0.2,
             ease: "power2.in",
-          })
-          .to(rootRef.current, {
-            yPercent: -100,
-            duration: 0.9,
-            ease: "power4.inOut",
-            onStart: () => onReady?.(),
+            onComplete: () => {
+              watermarkRef.current.style.display = "none";
+            },
           });
+          gsap
+            .timeline({ onComplete: onDone })
+            .to(contentRef.current, {
+              autoAlpha: 0,
+              y: -20,
+              duration: 0.4,
+              ease: "power2.in",
+            })
+            .to(rootRef.current, {
+              yPercent: -110,
+              duration: 0.9,
+              ease: "power4.inOut",
+              force3D: true,
+            });
+        };
+
+        nextFrame(() => {
+          if (cancelled) return;
+          onReady?.();
+          nextFrame(play);
+        });
       };
 
       const update = (target) =>
@@ -154,7 +175,7 @@ export default function Loader({ onDone, onReady }) {
         });
       });
 
-      gsap.to(sweep, {
+      const sweepTween = gsap.to(sweep, {
         p: 0,
         duration: 2.4,
         repeat: -1,

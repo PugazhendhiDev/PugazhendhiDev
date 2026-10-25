@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Loader from "./components/Loader";
 import Site from "./Site";
@@ -8,7 +9,9 @@ export default function App() {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    if (done) ScrollTrigger.refresh();
+    if (!done) return;
+    const id = setTimeout(() => ScrollTrigger.refresh(), 3000);
+    return () => clearTimeout(id);
   }, [done]);
 
   return (
@@ -16,7 +19,7 @@ export default function App() {
       {ready && <Site />}
       {!done && (
         <Loader
-          onReady={() => setReady(true)}
+          onReady={() => flushSync(() => setReady(true))}
           onDone={() => setDone(true)}
         />
       )}
